@@ -2,7 +2,7 @@
 
 Simple repository for the algorithms written in the classes of "Programação Estruturada", in C language.
 
-The resolution of URI and Tidia exercises will not have their solutions here.
+The resolution of URI and Tidia exercises will not be here.
 
 ## Classes
 - **20/09/2017:** Simple begin algorithms, like hello world, input and output, number formating etc.
