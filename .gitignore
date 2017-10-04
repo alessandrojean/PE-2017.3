@@ -2,7 +2,6 @@
 !*.*
 */URI
 */Tidia
-
 *.zip
 
-*/.vscode/
+.vscode/
