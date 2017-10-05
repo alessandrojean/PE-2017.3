@@ -1,7 +1,8 @@
 *
 !*.*
-*/URI
-*/Tidia
+!classes/
+URI/
+Tidia/
 *.zip
 
 .vscode/
