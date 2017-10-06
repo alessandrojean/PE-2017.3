@@ -1,4 +1,5 @@
-# PE-2017.3
+# PE-2017.3 
+![Year](https://img.shields.io/badge/year-2017.3-blue.svg) ![Last class](https://img.shields.io/badge/class-2017.04.10-green.svg) ![Language](https://img.shields.io/badge/language-C-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg)
 
 Simple repository for the algorithms written in the classes of "Programação Estruturada", in C language.
 
