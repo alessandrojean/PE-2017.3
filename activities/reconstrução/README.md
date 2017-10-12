@@ -1,5 +1,6 @@
 # Reconstrução
 ![aberta](https://img.shields.io/badge/aberta-11%2F10%2F2017%2012%3A00-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-20%2F10%2F2017%2023%3A55-red.svg)
+
 Neste exercício, você deverá fazer um programa que recebe, na entrada padrão, os seguintes dados. Primeiramente um inteiro positivo `n` menor que 200 e, em seguida, dois inteiros `a` e `b` entre 0 e (n-1). Finalmente, seu programa deve ler `n²` inteiros que correspondem às entradas de uma matriz quadrada `M` com dimensões `n x n`.
 
 A interpretação desses números é a seguinte. Imagine que um mapa (grafo) possui `n` locais (vértices) de interesse. A matriz `M` codifica rotas ótimas nesse mapa entre cada par de locais de interesse. Por exemplo, `M[i][j]` contém infomação sobre a melhor rota do local `i` até o local `j`. Mas que tipo de informação é essa? 

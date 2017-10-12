@@ -1,5 +1,6 @@
 # Histograma
 ![aberta](https://img.shields.io/badge/aberta-04%2F10%2F2017%2010%3A00-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-16%2F10%2F2017%2023%3A55-red.svg)
+
 Para este exercício, você deverá usar o arquivo temperatura.csv em anexo que contém um número (`float`) por linha. Esses números representam a temperatura média de cada dia, desde 01/01/1961 até 31/12/2016 registradas na estação meteorológica Mirante de Santana em São Paulo. 
 O problema proposto nesta atividade consiste do seguinte. Você deve fazer um programa que lê cada um desses números e coloca-os em um vetor declarado assim:
 
