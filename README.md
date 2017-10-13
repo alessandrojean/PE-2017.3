@@ -9,6 +9,19 @@ Simple repository for the algorithms written in the classes of "Programação Es
 - **04/10/2017:** Bubble sorting, counting sort, remove element from array.
 - **11/10/2017:** Recursion.
 
+## Bibliography
+### Basic
+1. PINHEIRO, F. A. C. - **Elementos de programação em C**. Porto Alegre, RS: Bookman, 2012.
+1. FORBELLONE, A. L. V. e EBERSPÄCHER, H. R. - **Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados**. Pearson Prentice Hall, 3rd edition, 2005.
+1. CORMEN, T. et al. - **Introduction to algorithms**. The MIT Press, 2nd edition, 2001.
+
+### Additional
+1. AGUILAR, L. J. - **Programação em C++: algoritmos, estruturas de dados e objetos**. São Paulo, SP: McGraw-Hill, 2008.
+2. DROZDEK, A. - **Estrutura de dados e algoritmos em C++**. São Paulo, SP: Cengage Learning, 2009.
+4. KNUTH D. E. - **The art of computer programming**. Upper Saddle River, USA: AddisonWesley, 2005.
+5. SEDGEWICK, R. - **Algorithms in C++: parts 1-4: fundamentals, data structures, sorting, searching**. Reading, USA: Addison-Wesley, 1998.
+6. SZWARCFITER, J. L.; MARKENZON, L. - **Estruturas de dados e seus algoritmos**. 3rd edition. Rio de Janeiro, RJ: LTC, 1994.
+7. TEWNENBAUM, A. M.; LANGSAM, Y.; AUGENSTEIN, M. J. - **Estruturas de dados usando C**. São Paulo, SP: Pearson Makron Books, 1995.
 
 ## License
 
