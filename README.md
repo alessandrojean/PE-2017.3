@@ -1,7 +1,7 @@
 # PE-2017.3 
-![Year](https://img.shields.io/badge/year-2017.3-blue.svg) ![Last class](https://img.shields.io/badge/last_class-2017.10.11-green.svg) ![Language](https://img.shields.io/badge/language-C-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg)
+![Year](https://img.shields.io/badge/year-2017.3-blue.svg) ![id](https://img.shields.io/badge/id-MCTA028--15-yellowgreen.svg) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg) ![Last class](https://img.shields.io/badge/last_class-2017.10.11-green.svg) ![Language](https://img.shields.io/badge/language-C-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg)
 
-Simple repository for the algorithms written in the classes of "Programação Estruturada", in C language.
+Algorithms written in the classes of Structured Programming (Programação Estruturada) at Federal University of ABC (UFABC).
 
 ## Classes
 - **20/09/2017:** Simple begin algorithms, like hello world, input and output, number formating etc.
