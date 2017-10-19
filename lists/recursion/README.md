@@ -1,4 +1,5 @@
 # Lista de exercícios: recursão
+![aberta](https://img.shields.io/badge/aberta-19%2F10%2F2017%2012%3A00-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-31%2F10%2F2017%2023%3A55-red.svg)
 
 Implemente funções recursivas para fazer o que é pedido em cada exercício.
 
