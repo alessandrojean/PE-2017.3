@@ -8,6 +8,7 @@ Algorithms written in the classes of Structured Programming (Programação Estru
 - **27/09/2017:** Beginning of arrays and functions.
 - **04/10/2017:** Bubble sorting, counting sort, remove element from array.
 - **11/10/2017:** Recursion.
+- **18/10/2017:** Pointers and memory allocation.
 
 ## License
 
