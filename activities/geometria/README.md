@@ -12,7 +12,7 @@ struct s_ponto {
 }
 ```
 
-Para não ter que ficar escrevento `struct s_ponto` toda vez, vamos criar um apelido (usando `typedef`) que nos permite escrever esse tipo de dado apenas como `ponto` ou como `vetor`. Veja:
+Para não ter que ficar escrevendo `struct s_ponto` toda vez, vamos criar um apelido (usando `typedef`) que nos permite escrever esse tipo de dado apenas como `ponto` ou como `vetor`. Veja:
 
 ```c
 typedef struct s_ponto ponto;
