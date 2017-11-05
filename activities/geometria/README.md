@@ -3,84 +3,87 @@
 
 ## Introdução
 
-Nesta atividade você deverá partir da estrutura básica abaixo.
+Implemente as funções declaradas no arquivo `geometria.h` (veja a listagem do código desse arquivo abaixo).
 
 ```c
+#ifndef GEOMETRIA
+#define GEOMETRIA
+
 struct s_ponto {
-    double x;
-    double y;
-}
-```
+  double x, y;
+};
 
-Para não ter que ficar escrevendo `struct s_ponto` toda vez, vamos criar um apelido (usando `typedef`) que nos permite escrever esse tipo de dado apenas como `ponto` ou como `vetor`. Veja:
-
-```c
 typedef struct s_ponto ponto;
 typedef struct s_ponto vetor;
-```
 
-Em seguida, você deverá criar as estruturas `s_segmento`, para representar um segmento de reta, e `s_triangulo`, para representar um triângulo no plano. Depois de criar essas estruturas, você pode acrescentar as linhas abaixo para simplificar o nome desses tipos:
+struct s_segmento {
+  ponto p, q;
+};
 
-```c
 typedef struct s_segmento segmento;
+
+struct s_triangulo {
+  ponto p, q, r;
+};
+
 typedef struct s_triangulo triangulo;
-```
 
-Use somente `ponto` dentro de `triangulo` (não use `segmento`).
+//  Calcula o produto interno <u,v>
+double produto_interno(vetor u, vetor v);
 
-## Exercício
+//  Calcula o vetor u - v
+vetor subtrai(vetor u, vetor v);
 
-Depois de definir essas estruturas, vocẽ deverá implementar as seguintes funções.
+/*  Calcula o vetor resultante da rotação do vetor v
+    de um ângulo de 90 graus (no sentido anti-horário). */
+vetor roda90(vetor v);
 
-```c
-// Calcula o produto interno <u,v>
-double produto_interno(vetor p, vetor q);
-
-// Calcula o vetor p - q
-vetor subtrai(vetor p, vetor q);
-
-/* Calcula o vetor resultante da rotação do vetor v
-   de um ângulo de 90 graus (no sentido anti-horário). */
-vetor roda90(vetor p);
-
-// Calcula distância
+//  Calcula distância
 double distancia(ponto p, ponto q);
 
-/* Retorna 1 se o coseno do ângulo entre os vetores u e v é positivo
-   retorna -1 se for negativo e 0 se for nulo. */
+/*  Retorna 1 se o coseno do ângulo entre os vetores u e v é positivo
+    e retorna -1 se for negativo e 0 se for nulo. */
 int sinal_do_coseno(vetor u, vetor v);
 
-/* Retorna 1 se p, q e r estão em sentido horário e -1 se for
-   anti-horário. Se os pontos forem colineares devolva 0. */
+/*  Retorna 1 se p, q e r estão em sentido horário e -1 se for
+    anti-horário. Se os pontos forem colineares devolva 0. */
 int sentido(ponto p, ponto q, ponto r);
 
-// Retorna 1 se os segmentos se cruzam e 0 caso contrário.
+/*  Retorna 1 se os interiores dos segmentos se cruzam
+    e retorna 0 caso contrário. */
 int cruza(segmento s, segmento t);
 
-/* Retorna 1 se o ponto p está no interior do triângulo t.
-   Devolve 0 caso contrário. */
+/*  Retorna 1 se o ponto p está no interior do triângulo t
+    e retorna 0 caso contrário. */
 int dentro(ponto p, triangulo t);
 
-// Opcional:
+/*  Devolve a cordenada do ponto em que s e t se intersecta
+    caso eles se intersectem ou qualquer ponto caso contrário. */
+ponto cruzamento(segmento s, segmento t);
 
-/* Devolve a cordenada do ponto em que s e t se intersecta
-   caso eles se intersectam ou qualquer ponto caso eles não
-   se intersectam. */
-ponto cruzamento(segmanto s, segmento t);
-
-// Calcula o ponto que é a projeção de p no segmento s.
+//  Calcula o ponto que é a projeção de p no segmento s. 
 ponto projeta(ponto p, segmento s);
 
-/* Devolve 1 se os triângulos a e b se intersectam
-   e devolve 0 caso contrário. */
+/*  Devolve 1 se o interior dos triângulos a e b se 
+    intersectam e devolve 0 caso contrário. */
 int intersecta(triangulo a, triangulo b);
+
+#endif
 ```
 
 ## Observações
 
-As funções foram declaradas numa certa ordem e você deve respeitá-la! Isto é, não pode chamar uma função que foi declarada depois na definição de uma função declarada antes. (É claro que em C você pode fazer isso, mas para este exercício estou pedindo a você que não faça isso.)
+Siga as instruções no arquivo README para compilação. Seu código deverá incluir `geometria.h` via
 
-A ordem foi pensada de modo que, na hora de implementar uma função é bem provável que você precise chamar alguma função que foi declarada antes dela (exceto pelas primeiras que são muito simples).
+```c
+#include "geometria.h"
+```
+
+no início do programa. É proibido modificar o conteúdo desse arquivo.
+
+Se você já havia feito o código, por favor adapte-o para que ele seja compatível com `geometria.h` a fim de que possa ser corrigido automaticamente pelo script de correção automática disponível no arquivo `EXE03.zip`.
+
+As funções foram declaradas numa certa ordem. A ordem foi pensada de modo que, na hora de implementar uma função é bem provável que você precise chamar alguma função que foi declarada antes dela (exceto pelas primeiras que são muito simples).
 
 ### Geometria analítica
 
