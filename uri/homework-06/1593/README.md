@@ -8,7 +8,7 @@ Neste problema, você deverá calcular o número de bits 1 em um inteiro `I` dad
 
 Na primeira linha terá um inteiro `T` (`T <= 100`) indicando o número de casos de teste.
 
-Para cada caso, haverá apenas uma linha com o número `I` (`1 ≤ I < 1018*` ou `1 ≤ I < 101000**`). O número da entrada não começará com um ou mais zeros.
+Para cada caso, haverá apenas uma linha com o número `I` (`1 ≤ I < 10 ^ 18*` ou `1 ≤ I < 10 ^ 1000**`). O número da entrada não começará com um ou mais zeros.
 
 *ocorrerá em 90% dos casos;
 **ocorrerá nos casos restantes.
