@@ -1,5 +1,5 @@
 # PE-2017.3 
-![Year](https://img.shields.io/badge/year-2017.3-blue.svg) ![id](https://img.shields.io/badge/id-MCTA028--15-yellowgreen.svg) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg) ![Last class](https://img.shields.io/badge/last_class-2017.11.01-green.svg) ![Language](https://img.shields.io/badge/language-C-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg)
+![Year](https://img.shields.io/badge/year-2017.3-blue.svg) ![id](https://img.shields.io/badge/id-MCTA028--15-yellowgreen.svg) ![tpi](https://img.shields.io/badge/T--P--I-2--2--4-lightgrey.svg) ![Last class](https://img.shields.io/badge/last_class-2017.11.08-green.svg) ![Language](https://img.shields.io/badge/language-C-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-VSCode-orange.svg)
 
 Algorithms written in the classes of Structured Programming (Programação Estruturada) at Federal University of ABC (UFABC).
 
@@ -11,6 +11,7 @@ Algorithms written in the classes of Structured Programming (Programação Estru
 - **18/10/2017:** Pointers and memory allocation.
 - **25/10/2017: First test** and URI exercises.
 - **01/11/2017:** Memory allocation of bidimensional arrays and structs.
+- **08/11/2017:** Linked lists.
 
 ## License
 
