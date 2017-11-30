@@ -13,6 +13,7 @@ Algorithms written in the classes of Structured Programming (Programação Estru
 - **01/11/2017:** Memory allocation of bidimensional arrays and structs.
 - **08/11/2017:** Linked lists.
 - **22/11/2017:** Linked lists *(continuation)*.
+- **29/11/2017:** File access, pointers to functions and `qsort`.
 
 ## License
 
