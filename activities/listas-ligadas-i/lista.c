@@ -1,49 +1,3 @@
-# Listas ligadas I
-![aberta](https://img.shields.io/badge/aberta-08%2F11%2F2017%2009%3A00-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-06%2F12%2F2017%2023%3A55-red.svg)
-
-Nesta atividade você deverá criar algumas funções para manipulação de listas ligadas. No arquivo `listas.c` que você verá na sequência, existem algumas funções já implementadas: são aquelas que vimos durante a aula teórica. Outras funções estão marcadas como exercício: são as que você deverá implementar durante esta aula de laboratório.
-
-Considere que as listas são simplesmente ligadas e que você só tem acesso aos parâmetros passados em cada função (não suponha que existam variáveis globais que guardam o inicio da lista nem o final). Ou seja, sua função deve trabalhar unicamente com o que foi passado a ela como parâmetro.
-
-## Arquivo lista.h
-
-```c
-#ifndef LISTA
-#define LISTA
-
-typedef struct s_no *   no;
-
-struct s_no {
-  int item;
-  no  prox;
-};
-
-  no novo            (int item);
-void deleta          (no x);
-void insere_inicio   (no *inicio,    no x);
-void remove_inicio   (no *inicio);
-void imprime         (no inicio);
-  no busca           (no inicio,     int item);
-  no buscaR          (no inicio,     int item);
-  no final           (no inicio);
-void insere_final    (no *inicio,    no x);
-void insere_finalR   (no *inicio,    no x);
-void remove_um       (no *inicio,    int item);
-void remove_todos    (no *inicio,    int item);
-void remove_todosR   (no *inicio,    int item);
-  no copia           (no inicio);
-void inverte         (no *inicio);
-void inverteR        (no *head,      no *tail);
-void inverteR2       (no *head);
-
-no livres = NULL;
-
-#endif
-```
-
-## Arquivo lista.c
-
-```c
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista.h"
@@ -53,12 +7,30 @@ no livres = NULL;
 //    para alocar muitos nós de uma vez e usar a lista
 //    livres para guardar os blocos que ainda não estão
 //    sendo usados. Como visto em sala...
-no novo(int item);
+no novo(int item) {
+  if (livres != NULL) {
+    no x = livres;
+    livres = livres->prox;
+    x->item = item;
+    x->prox = NULL;
+    return x;
+  }
+
+  no v = (no) malloc(1024 * sizeof(struct s_no));
+  for (int i = 0; i < 1024; i++) {
+    insere_inicio(&livres, v + i);
+  }
+
+  return novo(item);
+}
 
 // 2. (EXERCÍCIO) Deleta um nó.
 //    Adaptar a função deleta para trabalhar
 //    com a lista de nós livres. Como visto em sala...
-void deleta(no x);
+void deleta(no x) {
+  x->prox = livres;
+  livres = x;
+}
 
 // 3. Insere um nó no início da lista (como PUSH).
 //    (Supõem que x e ini são ambos diferentes de NULL.)
@@ -158,11 +130,43 @@ void remove_um(no *ini, int item) {
 }
 
 // 12. (EXERCÍCIO) Remove todos os nós contendo item.
-void remove_todos(no *ini, int item);
+void remove_todos(no *ini, int item) {
+  if (*ini == NULL)
+    return;
+
+  // Percorrer a primeira parte, se há ocorrencias na primeira posição.
+  no x, ant = *ini;
+  for (x = *ini; x != NULL && x->item == item; x = *ini) {
+    *ini = x->prox;
+    deleta(x);
+  }
+
+  // Percorrer a segunda parte.
+  for (; x != NULL; ant = x, x = x->prox) {
+    if (x->item == item) {
+      ant->prox = x->prox;
+      deleta(x);
+      x = ant;
+    }
+  }
+}
 
 // 13. (EXERCÍCIO) Remove todos os nós contendo item, recursivo.
 //     Este fica mais simples que o anterior.
-void remove_todosR(no *ini, int item);
+void remove_todosR(no *ini, int item) {
+  if (*ini == NULL)
+    return;
+
+  if ((*ini)->item == item) {
+    no x = *ini;
+    *ini = x->prox;
+    deleta(x);
+    remove_todosR(ini, item);
+    return;
+  }
+
+  remove_todosR(&((*ini)->prox), item);
+}
 
 // 14. Cria uma cópia da lista dada
 //     (copiar em outras posições de memória, é claro).
@@ -191,5 +195,37 @@ void inverte(no *ini) {
 // 16. (EXERCÍCIO) Função recursiva para inverter uma lista
 //     Agora só com o ponteiro para (o ponteiro para) o
 //     primeiro nó sendo passado como parâmetro.
-void inverteR2(no *ini);
-```
+void inverteR2(no *ini) {
+  if (*ini == NULL || (*ini)->prox == NULL)
+    return;
+
+  no x = *ini;
+  no y = x->prox;
+
+  inverteR2(&y);
+  x->prox->prox = x;
+  x->prox = NULL;
+
+  *ini = y;
+}
+
+// Troque o corpo da função main para testar outras funções...
+int main() {
+  no inicio = NULL;
+
+  for (int i = 10; i > 0; i--) {
+    insere_inicio(&inicio, novo(i));
+  }
+
+  insere_final(&inicio, novo(5));
+  insere_final(&inicio, novo(1));
+
+  printf("Lista original: ");
+  imprime(inicio);
+
+  inverteR2(&inicio);
+  printf("Lista invertida: ");
+  imprime(inicio);
+
+  return EXIT_SUCCESS;
+}

@@ -1,5 +1,5 @@
 # Listas ligadas II
-![aberta](https://img.shields.io/badge/aberta-22%2F11%2F2017%2009%3A30-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-28%2F11%2F2017%2023%3A55-red.svg)
+![aberta](https://img.shields.io/badge/aberta-22%2F11%2F2017%2009%3A30-green.svg) ![vencimento](https://img.shields.io/badge/vencimento-06%2F12%2F2017%2023%3A55-red.svg)
 
 Nesta atividade você deverá fazer um programa que seja capaz de fazer soma e multiplicação de inteiros arbitrariamente grandes. Seu programa deverá ler, da entrada padrão, uma conta por linha, até que o fim do arquivo seja atingido. Cada conta compreende um número inteiro não-negativo com um número arbitrário de dígitos decimais, um operador de mais ou de vezes, e outro número inteiro não-negativo com um número arbitrário de dígitos decimais. Seu programa deve armazenar cada número inteiro numa lista ligada, um dígito decimal por nó. As operações de soma e multiplicação deverão ser implementadas manualmente por você, para operar com essas
 listas de dígitos e obter o resultado desejado de cada conta. Seu programa deve imprimir o resultado de cada conta em uma linha diferente da saída padrão. Cada número da entrada poderá ter até 32768 dígitos.
