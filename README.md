@@ -9,11 +9,12 @@ Algorithms written in the classes of Structured Programming (Programação Estru
 - **04/10/2017:** Bubble sorting, counting sort, remove element from array.
 - **11/10/2017:** Recursion.
 - **18/10/2017:** Pointers and memory allocation.
-- **25/10/2017: First test** and URI exercises.
+- **25/10/2017: First test**.
 - **01/11/2017:** Memory allocation of bidimensional arrays and structs.
 - **08/11/2017:** Linked lists.
 - **22/11/2017:** Linked lists *(continuation)*.
 - **29/11/2017:** File access, pointers to functions and `qsort`.
+- **06/12/2017: Second test**.
 
 ## License
 
