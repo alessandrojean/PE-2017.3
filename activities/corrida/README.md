@@ -143,7 +143,7 @@ Como combinamos que o percurso todo terá 100km, `S2 = 100`. Agora podemos deduz
 
     t2 = 2 * (100 / 17.5) = 11.42857142857142...
 
-Portanto, a saída correspondente à entrada examina seria:
+Portanto, a saída correspondente à entrada examinada seria:
 
     11.429
 
