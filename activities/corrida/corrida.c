@@ -1,7 +1,3 @@
-/*
-  Alessandro Jean Gigi, 11070616
-  Victor Parpinelli Ananias da Silva, 11072516
-*/
 #include <stdio.h>
 #include <stdlib.h>
 
