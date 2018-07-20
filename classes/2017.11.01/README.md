@@ -1,4 +1,5 @@
 # Aula 06
+*Retirado dos slides do Prof. Daniel M. Martin, CMCC/UFABC.*
 
 ## Alocando dinamicamente uma matriz
 

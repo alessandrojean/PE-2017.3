@@ -1,4 +1,5 @@
 # Aula 02
+*Retirado dos slides do Prof. Daniel M. Martin, CMCC/UFABC.*
 
 ## Funções
 Uma função é um agrupamento de linhas de código que juntas realizam uma tarefa. Todo programa em C tem pelo menos uma função que se chama `main()`.

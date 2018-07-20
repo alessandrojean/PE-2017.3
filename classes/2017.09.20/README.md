@@ -1,4 +1,5 @@
 # Aula 01
+*Retirado dos slides do Prof. Daniel M. Martin, CMCC/UFABC.*
 
 ## Tópicos
 

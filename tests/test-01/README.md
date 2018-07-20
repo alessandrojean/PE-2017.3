@@ -1,4 +1,5 @@
 # Prova 01
+*Prova do Prof. Daniel M. Martin, CMCC/UFABC.*
 
 1. **(2.0)** Escreva um programa completo em C que lê um inteiro positivo `n`, depois lê `n` inteiros positivos, depois calcula e imprime o máximo, o mínimo e a média dos últimos `n` valores lidos e, finalmente, imprime a média daqueles valores que forem menores que a média. Não precisa usar `malloc` para esta questão.
 
